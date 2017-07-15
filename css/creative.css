@@ -84,8 +84,7 @@ body {
       max-height: 300px;
       max-width: auto;
       float: right;
-      padding-left: 2vw;
-      padding-top: 2vh; } }
+      padding-left: 2vw; } }
 
 #mainNav {
   border-color: rgba(34, 34, 34, 0.05);
