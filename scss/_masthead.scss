@@ -9,9 +9,9 @@ header.masthead {
 
     background-image: url("../img/header.jpg");
     background-attachment: fixed;
-    background-position: center;
+    background-position: center top;
     background-repeat: no-repeat;
-    background-size: cover;
+    // background-size: cover;
 
     @include background-cover;
     .header-content {
