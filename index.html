@@ -43,8 +43,8 @@
     $(window).load(function() {
         $(".loader").delay(1500).fadeOut("slow");
     });
-    $('.masthead').parallax({
-    speed : 0.15
+    $('body').scroll(function(){
+    $(".masthead").css({"background-position":"center " +($('body').scrollTop()*0.65) + "px"});
     });
     </script> 
 
