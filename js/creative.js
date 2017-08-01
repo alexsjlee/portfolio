@@ -1,6 +1,11 @@
 (function($) {
     "use strict"; // Start of use strict
 
+    $(window).load(function() {
+        // Animate loader off screen
+        $(".loader").delay(1000).fadeOut("slow");
+    });
+
     // Smooth scrolling using jQuery easing
     $('a[href*="#"]:not([href="#"])').click(function() {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {

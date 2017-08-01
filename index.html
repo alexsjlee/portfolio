@@ -37,9 +37,21 @@
     }
     </style>
 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script type="text/javascript">
+
+    $(window).load(function() {
+        $(".loader").delay(1500).fadeOut("slow");
+    });
+    </script> 
+
 </head>
 
 <body id="page-top">
+
+     <div class="loader-div">
+          <div class="loader"></div>  
+    </div>  
 
     <!-- Navigation -->
     <nav class="navbar fixed-top navbar-toggleable-md navbar-light" id="mainNav">
@@ -81,13 +93,16 @@
     <section class="bg-primary" id="about">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 offset-lg-2 text-center">
-                    <img class="img-fluid me mx-auto" src="./img/me.jpg">
-                    <br>
+                <div class="col-12 text-center">
                     <h2 class="section-heading text-white">About Me</h2>
                     <hr class="light">
-                    <p class="text-faded">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam facilis earum, quos magnam illum neque possimus asperiores quidem veniam. Possimus voluptate error velit natus dicta amet quidem ipsum facere qui veniam optio quaerat aliquid, recusandae, ducimus cupiditate, sint. Doloribus, veritatis.
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12 col-12 text-center">
+                    <img class="img-fluid me mx-auto" src="./img/me.jpg">  
+                </div>
+                <div class="col-lg-8 col-md-12 col-sm-12 col-12 text-center">
+                    <p class="text-faded blurb">
+                        My passion for web development started about 15 years ago when I built my first website on Yahoo! Geocities during summer break. I was so captivated with my creation that I spent all of my summer working on it. I coded here and there on sites like my Xanga and MySpace pages throughout the years but did not make the jump into web development as I saw it more as a hobby than a career. After graduating with a degree in Psychology from UC Davis, I decided to revisit my old hobby and began studying on my own through online resources but soon realized that I was not making the coding gains I knew I could with a little more guidance. Through the support of family and friends, I signed up for an accelerated web development program which exponentially expanded my coding skills and I acquired the coding gains I knew I was capable of. I look forward to bringing my passion and exceptional skills to my new career.
                     </p>
                 </div>
             </div>
@@ -291,7 +306,7 @@
                     </div>
                 </div>
                 
-                <div class="col-lg-3 col-md-4 col-sm-4 col-6 text-center">
+                <div class="col-lg-3 col-md-4 col-sm-4 col-6 text-center"> 
                     <div class="service-box">
                         <svg class="svg" viewBox="0 0 128 128">
                             <path class="cls-1" d="M12.81,67.6a10.2,10.2,0,0,1-9.94-7c-.06-.17-.1-.33-.15-.49A10.69,10.69,0,0,1,9.64,47.07L97,17.8a11.82,11.82,0,0,1,3.19-.47,10.47,10.47,0,0,1,10.21,7.14l.13.42c1.63,5.71-2.43,10.81-7.29,12.44L16.36,67a11.3,11.3,0,0,1-3.55.6Z"></path><path class="cls-2" d="M27.37,110.55a10.19,10.19,0,0,1-10-6.89c-.05-.16-.1-.32-.15-.49A10.76,10.76,0,0,1,24.16,90L111.5,60.46a11.24,11.24,0,0,1,3.47-.58A10.55,10.55,0,0,1,125.15,67l.13.44A11.05,11.05,0,0,1,124,76.28c-1.25,1.95-5.19,3.66-5.19,3.66l-87.68,30a12,12,0,0,1-3.71.63Z"></path><path class="cls-3" d="M100.08,110.74a10.72,10.72,0,0,1-10.27-7.31L60.66,16.84l-.15-.49A10.74,10.74,0,0,1,81,10l29.15,86.58.08.28a10.73,10.73,0,0,1-10.17,13.89Z"></path><path class="cls-4" d="M56.75,125.33A10.73,10.73,0,0,1,46.48,118L17.33,31.43l-.15-.48a10.72,10.72,0,0,1,6.9-13.12,10.89,10.89,0,0,1,3.34-.56,10.72,10.72,0,0,1,10.27,7.31l29.14,86.59c.05.15.1.32.15.48a10.73,10.73,0,0,1-10.23,13.68h0Z"></path><path class="cls-5" d="M85.71,91.24,106,84.29,99.39,64.56,79,71.44Z"></path><path class="cls-6" d="M42.45,106l20.32-6.95L56.08,79.2,35.73,86.08Z"></path><path class="cls-7" d="M71.24,48.26l20.33-6.94L85,21.82,64.64,28.64Z"></path><path class="cls-8" d="M28,63,48.3,56.09,41.65,36.34,21.29,43.16,28,63Z"></path>
@@ -299,7 +314,7 @@
                         <h5>Slack</h5>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-4 col-6 text-center">
+                 <div class="col-lg-3 col-md-4 col-sm-4 col-6 text-center"> 
                     <div class="service-box">
                         <svg class="svg" version="1.1" id="Layer_1" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
                             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 128.16 128.16"
@@ -374,72 +389,183 @@
                         <h5>Meister Task</h5>
                     </div>
                 </div>
+                <div class="col-lg-3 col-md-4 col-sm-4 col-6 text-center"> 
+                    <div class="service-box">
+                        <svg class="svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            viewBox="0 0 128.2 128.2" style="enable-background:new 0 0 128.2 128.2;" xml:space="preserve">
+                        <style type="text/css">
+                            .st0{fill:#F05A24;}
+                            .st1{fill:#FBF9F8;}
+                            .st2{fill:#EE5924;}
+                            .st3{fill:#FE9320;}
+                            .st4{fill:#999999;}
+                            .st5{fill:#676767;}
+                            .st6{fill:#9A9A9A;}
+                            .st7{fill:#F05D28;}
+                            .st8{fill:#6A6A6A;}
+                            .st9{fill:none;stroke:#FBF9F8;stroke-width:1.1489;stroke-linecap:round;stroke-miterlimit:10;}
+                        </style>
+                        <g>
+                            <path class="st0" d="M33.5,81c-4.2-4.3-7.3-9.3-9.4-14.9c-2-5.2-2.9-10.5-2.8-16.1c0.4-14.1,6.2-25.7,17.4-34.4
+                                C45,10.8,52,7.9,59.8,7c14-1.6,26.2,2.4,36.4,12.3c6.9,6.6,11.1,14.8,12.6,24.2c2,13-1.1,24.8-9.4,35C93,86.4,84.8,91.5,74.9,93.6
+                                C62.6,96.3,51.1,94,40.5,87c0.9-0.7,1.8-1.3,2.7-2c4.2-3.5,8.5-7,12.7-10.5C60,71,64,67.5,67.5,63.6c3.4-3.8,6.4-7.7,8.6-12.3
+                                c1.5-3.2,2.5-6.5,2.3-10.1c0-0.1,0.1-0.2,0.1-0.3c5.6,3.3,12.7,0.8,15.1-3.3c2.3-3.9,2.7-9.3-1-13.2c-3.7-3.9-8.9-5-13.8-2.4
+                                c-2.2,1.2-3.8,3.1-4.7,5.4c-1.2,3-1,6,0.3,8.9c-0.1,0-0.1,0.1-0.2,0.1c-0.4,0-0.9,0-1.3,0c-3.4-0.1-6.6,0.6-9.5,2.4
+                                c-1.2,0.8-2.4,1.6-3.6,2.4C55.6,44.3,51.8,48,48.3,52c-4.4,5-8.7,10.2-13,15.3c-0.3,0.3-0.5,0.6-0.3,1.1c0.3,0.4,0.7,0.3,1.1,0.2
+                                c3.6-0.8,7.1-1.5,10.7-2.3c0.3-0.1,0.7-0.1,1.2-0.1c-0.3,0.4-0.5,0.6-0.7,0.8c-1.7,1.8-3.4,3.6-5.1,5.3C39.3,75.1,36.4,78,33.5,81z
+                                "/>
+                            <path class="st1" d="M33.5,81c2.9-2.9,5.7-5.9,8.6-8.8c1.7-1.8,3.4-3.6,5.1-5.3c0.2-0.2,0.3-0.4,0.7-0.8c-0.6,0.1-0.9,0.1-1.2,0.1
+                                c-3.6,0.8-7.1,1.5-10.7,2.3c-0.4,0.1-0.8,0.2-1.1-0.2c-0.3-0.4,0-0.7,0.3-1.1c4.3-5.1,8.6-10.2,13-15.3c3.5-4,7.4-7.6,11.6-10.8
+                                c1.2-0.9,2.4-1.6,3.6-2.4c2.9-1.8,6.1-2.5,9.5-2.4c0.4,0,0.9,0,1.3,0c0,0,0.1,0,0.2-0.1c-1.3-2.9-1.5-5.9-0.3-8.9
+                                c1-2.3,2.5-4.2,4.7-5.4c4.9-2.7,10.1-1.6,13.8,2.4c3.7,3.9,3.3,9.3,1,13.2c-2.5,4.1-9.5,6.6-15.1,3.3c0,0.1-0.1,0.2-0.1,0.3
+                                c0.2,3.6-0.8,6.9-2.3,10.1c-2.2,4.6-5.2,8.6-8.6,12.3C64,67.5,60,71,55.9,74.4c-4.2,3.5-8.4,7-12.7,10.5c-0.9,0.7-1.8,1.3-2.7,2
+                                c-2.4,1.5-4.8,3-7.4,4.5c0.2,1,0.5,2.1,0.7,3.2c0.5,2,1,4.1,1.4,6.1c0,0.1,0.1,0.3,0.1,0.4c-0.1,0.3-0.1,0.7-0.3,0.7
+                                c-0.2,0.1-0.7,0-0.9-0.2c-0.6-0.6-1.2-1.2-1.8-1.8c-0.3-0.2-0.5-0.5-0.8-0.7c-2.4-2.4-4.8-4.7-7.2-7.1c-0.8-0.9-0.8-0.9,0-1.8
+                                c2.8-2.9,5.6-5.8,8.4-8.7C33.1,81.5,33.3,81.2,33.5,81z M75.7,38.1c-0.6-0.2-1-0.3-1.4-0.4c-1.9-0.4-3.8-0.1-5.7,0.3
+                                c-3,0.6-5.4,2.3-7.8,4c-4.1,3-7.8,6.5-11.2,10.3c-1.7,1.8-3.3,3.8-5,5.7c2,1.9,3.9,3.7,5.9,5.5C58.9,55.1,67.2,46.7,75.7,38.1z
+                                M57.1,71.7c-0.5-0.5-1-1-1.4-1.5c-0.4-0.4-0.7-0.5-1.2-0.4c-3.1,0.6-6.1,1.1-9.2,1.7c-0.6,0.1-1,0.4-1.4,0.8
+                                c-6,6.2-11.9,12.3-17.9,18.5c-0.2,0.2-0.3,0.4-0.5,0.6c1.6,1.9,7.2,7.2,8,7.5c-0.1-0.4-0.1-0.8-0.2-1.1c-0.4-2-0.9-3.9-1.4-5.9
+                                c-0.3-1.1-0.2-1.2,0.8-1.7c3.8-2,7.5-4.3,10.8-7.1c4.1-3.3,8.1-6.8,12.1-10.2C56.1,72.5,56.6,72.1,57.1,71.7z M55.2,67.9
+                                c0.2-0.2,0.4-0.3,0.5-0.5c6.1-6.2,12.3-12.4,18.3-18.7c1.1-1.1,2-2.5,2.8-3.8c0.9-1.5,0.8-3.1,0.4-4.8c-0.1-0.4-0.4-0.7-0.7-1.2
+                                C68.2,47.6,59.8,56,51.4,64.4C52.7,65.6,53.9,66.7,55.2,67.9z M90.2,23.9c-3.7-3.1-9.4-2.6-12.9,1c-3.4,3.5-3.5,9.3-0.2,13
+                                c2.6,3,8.2,4.3,10.7,2.4c-2.1-2.2-4.2-4.4-6.2-6.6c-0.9-1-0.9-1.1,0-2c1.9-1.8,3.8-3.5,5.8-5.3C88.3,25.7,89.2,24.8,90.2,23.9z
+                                M82.4,32.8c2.3,2.4,4.5,4.8,6.7,7.2c5.2-2.3,7.1-10.8,2.1-15.2C88.3,27.4,85.4,30.1,82.4,32.8z M75.7,48.9
+                                c-0.1-0.1-0.2-0.1-0.2-0.2C69,55.4,62.5,62,56,68.6c0.8,0.7,1.5,1.4,2.2,2.1c0.3-0.2,0.5-0.4,0.7-0.5c3.7-3.2,7.2-6.6,10.2-10.4
+                                c2.4-3,4.6-6.2,6.2-9.8C75.5,49.6,75.6,49.3,75.7,48.9z M48.7,64.4c-1.7-1.7-3.4-3.4-5.1-5.1c-2.1,2.4-4.2,4.9-6.3,7.4
+                                c0,0.1,0.1,0.1,0.1,0.2C41.3,66,45,65.2,48.7,64.4z M50.6,65.3c-1.5,1.5-2.9,3-4.3,4.5c0,0.1,0.1,0.1,0.1,0.2
+                                c2.5-0.5,5-0.9,7.7-1.4C52.8,67.5,51.7,66.4,50.6,65.3z M75.8,48.6L75.8,48.6L75.8,48.6L75.8,48.6z M33.5,99.1L33.5,99.1L33.5,99.1
+                                L33.5,99.1z"/>
+                            <path class="st2" d="M24.4,92.2c2.4,2.4,4.8,4.7,7.2,7.1c-2.2,0.1-4.3,0.2-6.5,0.3c-2.3,0.1-4.7,0.2-7,0.2c-0.3,0-0.6,0-1.2,0
+                                C19.5,97.2,22,94.7,24.4,92.2z"/>
+                            <path class="st3" d="M75.7,38.1c-8.5,8.6-16.8,16.9-25.2,25.4c-2-1.8-3.9-3.6-5.9-5.5c1.7-1.9,3.3-3.9,5-5.7
+                                c3.4-3.7,7.1-7.3,11.2-10.3c2.4-1.7,4.8-3.4,7.8-4c1.9-0.4,3.8-0.7,5.7-0.3C74.7,37.9,75.1,38,75.7,38.1z"/>
+                            <path class="st4" d="M57.1,71.7c-0.5,0.5-1,0.9-1.5,1.3c-4,3.4-8,6.8-12.1,10.2c-3.4,2.7-7,5-10.8,7.1c-1,0.5-1,0.6-0.8,1.7
+                                c0.5,2,0.9,3.9,1.4,5.9c0.1,0.3,0.1,0.7,0.2,1.1c-0.8-0.3-6.3-5.6-8-7.5c0.1-0.2,0.3-0.4,0.5-0.6c6-6.2,11.9-12.3,17.9-18.5
+                                c0.4-0.4,0.8-0.7,1.4-0.8c3.1-0.5,6.2-1.1,9.2-1.7c0.5-0.1,0.9,0,1.2,0.4C56.1,70.7,56.6,71.1,57.1,71.7z"/>
+                            <path class="st5" d="M55.2,67.9c-1.3-1.2-2.5-2.3-3.8-3.5c8.4-8.4,16.7-16.8,25.1-25.3c0.3,0.5,0.6,0.8,0.7,1.2
+                                c0.4,1.6,0.5,3.3-0.4,4.8c-0.8,1.3-1.7,2.7-2.8,3.8C68,55.1,61.8,61.3,55.7,67.5C55.6,67.6,55.4,67.7,55.2,67.9z"/>
+                            <path class="st4" d="M90.2,23.9c-1,0.9-1.9,1.7-2.8,2.6c-1.9,1.8-3.8,3.5-5.8,5.3c-1,0.9-1,1,0,2c2.1,2.2,4.2,4.4,6.2,6.6
+                                c-2.5,1.9-8.1,0.6-10.7-2.4c-3.3-3.7-3.2-9.5,0.2-13C80.7,21.4,86.4,20.9,90.2,23.9z"/>
+                            <path class="st5" d="M82.4,32.8c3-2.7,5.9-5.4,8.8-8.1c5,4.4,3.1,13-2.1,15.2C86.9,37.6,84.7,35.2,82.4,32.8z"/>
+                            <path class="st6" d="M75.7,48.9c-0.1,0.4-0.2,0.7-0.4,1.1c-1.6,3.6-3.8,6.8-6.2,9.8c-3.1,3.8-6.5,7.2-10.2,10.4
+                                c-0.2,0.2-0.4,0.3-0.7,0.5c-0.7-0.7-1.4-1.3-2.2-2.1c6.5-6.7,13-13.3,19.5-19.9C75.6,48.8,75.6,48.9,75.7,48.9z"/>
+                            <path class="st7" d="M48.7,64.4c-3.7,0.8-7.5,1.6-11.2,2.4c0-0.1-0.1-0.1-0.1-0.2c2.1-2.5,4.2-5,6.3-7.4C45.4,61,47,62.7,48.7,64.4
+                                z"/>
+                            <path class="st8" d="M50.6,65.3c1.2,1.1,2.3,2.1,3.5,3.3c-2.7,0.5-5.2,0.9-7.7,1.4c0-0.1-0.1-0.1-0.1-0.2
+                                C47.7,68.4,49.1,66.9,50.6,65.3z"/>
+                            <polygon class="st6" points="75.8,48.6 75.8,48.5 75.8,48.5 	"/>
+                            <polygon class="st4" points="33.5,99.1 33.5,99.2 33.5,99.1 	"/>
+                        </g>
+                        </svg>
+                        <h5>Postman</h5>
+                    </div>
+                </div>
+
 
             </div>
         </div>
 
     </section>
 
-    <section class="no-padding" id="applications">
+    <section class="bg-primary" id="applications">
         <div class="container-fluid">
-            <div class="row no-gutter ">
-                <!-- popup-gallery -->
-                <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box" href="#" target="_blank">
-                        <img class="img-fluid" src="img/portfolio/thumbnails/1.jpg" alt="">
+            <div class="row no-gutter">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading text-white">Applications</h2>
+                    <hr class="light">
+                </div>
+                
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class='portfolio-box'>
+                        <img class="img-fluid" src="img/portfolio/thumbnails/travelstarter.jpg" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
-                                <div class="project-name">
+                                <div class="project-category">
                                     Travel Starter
                                 </div>
-                                <div class="project-category text-faded">
-                                    An itinerary creator.
+                                <div class="project-name text-faded">
+                                     An itinerary creator.
                                 </div>
+                                 <div class="project-name text-faded">
+                                    <strong>Tech Used:</strong> ReactJS, Redux, Nodejs, MongoDB, Express, & Bootstrap.<br/>
+                                </div> 
+                                 <div class="project-name text-faded">
+                                    <strong><a class='text-white' href='http://travel.alexsjlee.com' target='_blank'>Live</a> | <a class='text-white' href='https://github.com/alexsjlee/travelstarter' target='_blank'>Front-End GitHub</a> | <a class='text-white' href='https://github.com/alexsjlee/travelstarter_backend' target='_blank'>Back-End GitHub</a></strong>
+                                </div> 
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box" href="#" target="_blank">
-                        <img class="img-fluid" src="img/portfolio/thumbnails/2.jpg" alt="">
+
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="portfolio-box">
+                        <img class="img-fluid" src="img/portfolio/thumbnails/pugtato.jpg" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
-                                <div class="project-name">
-                                    PugTato
+                                <div class="project-category">
+                                    Couch Pugtato
                                 </div>
-                                <div class="project-category text-faded">
-                                    A fun app that will generate a drink, movie, and restaurant based on your mood!
+                                <div class="project-name text-faded">
+                                    A fun app that will pick a movie and restaurant for you so you can be a lazy couch pugtato!
                                 </div>
+                                <div class="project-name text-faded">
+                                    <strong>Tech Used:</strong> ReactJS, Redux, Nodejs, Express, & React-Bootstrap.
+                                </div>
+                                 <div class="project-name text-faded">
+                                    <strong><a class='text-white' href='http://pugtato.alexsjlee.com/' target='_blank'>Live</a> | <a class='text-white' href='https://github.com/alexandra-kruip/couch_pugtato' target='_blank'>Front-End GitHub</a> | <a class='text-white' href='https://github.com/alexsjlee/couch_pugtato_backend' target='_blank'>Back-End GitHub</a></strong>
+                                </div> 
                             </div>
                         </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box" href="#" target="_blank">
-                        <img class="img-fluid" src="img/portfolio/thumbnails/3.jpg" alt="">
+                    </div>
+                </div> 
+                
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="portfolio-box">
+                        <img class="img-fluid" src="img/portfolio/thumbnails/memorymatch.jpg" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
-                                <div class="project-name">
+                                <div class="project-category">
                                     OverMatch
                                 </div>
-                                <div class="project-category text-faded">
+                                <div class="project-name text-faded">
                                     A memory match game with a theme of Blizzard's Overwatch
                                 </div>
+                                <div class="project-name text-faded">
+                                    <strong>Tech Used:</strong> HTML, CSS, jQuery, & Bootstrap
+                                </div>
+                                 <div class="project-name text-faded">
+                                    <strong><a class='text-white' href='http://alexsjlee.com/overmatch' target='_blank'>Live</a> | <a class='text-white' href='https://github.com/alexsjlee/overmatch' target='_blank'>GitHub</a></strong>
+                                </div> 
                             </div>
                         </div>
-                    </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="portfolio-box">
+                        <img class="img-fluid" src="img/portfolio/thumbnails/sgt.jpg" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category">
+                                    Student Grade Table
+                                </div>
+                                <div class="project-name text-faded">
+                                    A content management system that dynamically displays data grabbed from an external database.
+                                </div>
+                                <div class="project-name text-faded">
+                                    <strong>Tech Used:</strong> ReactJS, Redux, Nodejs, Express, & MongoDB.
+                                </div>
+                                 <div class="project-name text-faded">
+                                    <strong><a class='text-white' href='http://sgt.alexsjlee.com/' target='_blank'>Live</a> | <a class='text-white' href='https://github.com/alexsjlee/sgtreact' target='_blank'>Front-End GitHub</a> | <a class='text-white' href='https://github.com/alexsjlee/sgtdb' target='_blank'>Back-End GitHub</a></strong>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
             </div>
         </div>
     </section>
-
-    <div class="call-to-action bg-dark">
-        <div class="container text-center">
-            <!-- <h2>View My Resume</h2> -->
-            <a class="btn btn-default btn-xl sr-button" href="#">View My Resume</a>
-        </div>
-    </div>
 
     <section id="contact">
         <div class="container">
@@ -451,27 +577,68 @@
                         Let's meet up in person and chat over a cup of coffee or a quick lunch.
                     </p>
                 </div>
-                <div class="col-lg-4 offset-lg-2 text-center">
-                    <p><a href="tel:123-456-7890"><i class="fa fa-phone fa-3x sr-contact"></i></a></p>
-                    <p><a href="tel:123-456-7890">123-456-6789</a></p>
+                <div class="col-md-4 col-12 text-center">
+                    <p><a id="phoneIcon" href="tel:123-456-7890"><i class="fa fa-phone fa-3x sr-contact"></i></a></p>
+                    <p><a id="phone" href="tel:123-456-7890">123-456-6789</a></p>
                 </div>
-                <div class="col-lg-4 text-center">
-                    <p><a href="mailto:your-email@your-domain.com"><i class="fa fa-envelope-o fa-3x sr-contact"></i></a></p>
-                    <p><a href="mailto:your-email@your-domain.com">feedback@startbootstrap.com</a></p>
+                <div class="col-md-4 col-12 text-center">
+                    <p><a id="emailIcon" href="mailto:your-email@your-domain.com"><i class="fa fa-envelope-o fa-3x sr-contact"></i></a></p>
+                    <p><a id="email" href="mailto:your-email@your-domain.com">feedback@startbootstrap.com</a></p>
+                </div>
+                <div class="col-md-4 col-12 text-center">
+                    <p><a id="emailIcon" href="http://dev.alexsjlee.com/resume/AlexSJLee_Resume_20170731_2.pdf" target="_blank"><i class="fa fa-file-pdf-o fa-3x sr-contact"></i></a></p>
+                    <p><a id="email" href="http://dev.alexsjlee.com/resume/AlexSJLee_Resume_20170731_2.pdf" target="_blank">Resume</a></p>
                 </div>
 
-                <div class="col-lg-4 text-center">
+                <div class="col-md-4 col-12 text-center">
                     <p><a href="https://github.com/alexsjlee" target="_blank"><i class="fa fa-github fa-3x sr-contact"></i></a></p>
+                    <p><a href="https://github.com/alexsjlee" target="_blank">GitHub</a></p>
                 </div>
-                <div class="col-lg-4 text-center">
-                    <p><a href="https://www.linkedin.com/in/seung-jun-lee-53b22513b/" target="_blank"><i class="fa fa-linkedin-square fa-3x sr-contact"></i></a></p>
+                <div class="col-md-4 col-12 text-center">
+                    <p><a href="https://www.linkedin.com/in/alex-seung-jun-lee-53b22513b/" target="_blank"><i class="fa fa-linkedin-square fa-3x sr-contact"></i></a></p>
+                    <p><a href="https://www.linkedin.com/in/alex-seung-jun-lee-53b22513b/" target="_blank">LinkedIn</a></p>
                 </div>
-                <div class="col-lg-4 text-center">
-                    <p><a href="https://www.twitter.com/" target="_blank"><i class="fa fa-twitter fa-3x sr-contact"></i></a></p>
+                <div class="col-md-4 col-12 text-center">
+                    <p><a href="https://www.twitter.com/AlexSJLeeDev" target="_blank"><i class="fa fa-twitter fa-3x sr-contact"></i></a></p>
+                    <p><a href="https://www.twitter.com/AlexSJLeeDev" target="_blank">Twitter</a></p>
                 </div>
             </div>
         </div>
     </section>
+
+    <script>
+        function appendEmail(){
+            var e = "ale";
+            e += "xsj";
+            e += "lee.";
+            e += "dev@";
+            e += "gma";
+            e += "il.";
+            e += "com";
+            var m = 'mai';
+            m += 'lto:';
+            document.querySelector('#email').textContent = e;
+            document.querySelector('#email').setAttribute('href', `${m+=e}`)
+            document.querySelector('#emailIcon').setAttribute('href', `${m}`)
+        }
+
+        function appendPhone(){
+            var p = '94';
+            p += '9-';
+            p += '38';
+            p += '5-';
+            p += '35';
+            p += '85';
+            var t = 'te';
+            t += 'l:';
+            document.querySelector('#phone').textContent = p;
+            document.querySelector('#phone').setAttribute('href', t+=p)
+            document.querySelector('#phoneIcon').setAttribute('href', t)
+        }
+
+        appendEmail();
+        appendPhone();
+    </script>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
