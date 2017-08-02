@@ -99,11 +99,12 @@ body {
     max-height: 300px;
     max-width: auto;
     margin-bottom: 2vh;
+    border: 1px solid black;
     @media (min-width: 992px) {
         max-height: 300px;
         max-width: auto;
         float: right;
-        padding-left: 2vw;
+        border: 1px solid black;
     }
 }
 
